@@ -1,0 +1,8 @@
+The corrected code simply removes the invalid class or replaces it with a valid one.
+
+```html
+<div class="bg-red-500 bg-blue-500">
+</div>
+```
+
+This version directly applies the `bg-blue-500` class, avoiding the `@apply` directive for this specific case.  If you need to reuse `bg-blue-500`, create a custom CSS class instead of using `@apply` to enforce better maintainability.
